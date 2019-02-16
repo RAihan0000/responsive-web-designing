@@ -1,0 +1,39 @@
+img{
+  width: inherit;
+}
+img:hover{
+  border-radius: 30%
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+}
+.submain{
+  width: 25%;
+  border-style:solid;
+  border-color: black;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
+}
+/*media quiries*/
+@media only screen and (max-width:450px) {
+  .main{
+    border: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width=750px) and (max-width=1050px) {
+  .main{
+    border: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+  }
+
+}
